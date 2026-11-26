@@ -1,0 +1,6 @@
+{
+  "name": "Happy Birthday, Riya Didi",
+  "description": "A personalized interactive 3D birthday surprise and digital keepsake crafted with warmth and gratitude for Riya Didi.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

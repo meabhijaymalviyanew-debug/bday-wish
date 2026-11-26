@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@theme {
+  --color-blush-50: #fff6f9;
+  --color-blush-100: #ffe9f1;
+  --color-blush-200: #ffd1e2;
+  --color-blush-300: #f7acc7;
+  --color-blush-400: #dc6d96;
+  --color-blush-500: #c2527c;
+
+  --color-lavender-50: #f7f4ff;
+  --color-lavender-100: #ede7ff;
+  --color-lavender-200: #dad0fa;
+  --color-lavender-300: #bca9f0;
+  --color-lavender-400: #8e74cf;
+
+  --color-cream-50: #fffdf9;
+  --color-cream-100: #fcf6ea;
+  --color-cream-200: #f4e8d3;
+
+  --color-gold-300: #e7c989;
+  --color-gold-400: #cca252;
+  --color-gold-500: #9f7730;
+
+  --color-ink: #3f303b;
+  --color-ink-soft: #6a5765;
+
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-script: "Dancing Script", cursive;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+}
+
+@layer base {
+  html,
+  body,
+  #root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: var(--font-sans);
+    background-color: #faf3f6;
+    color: var(--color-ink);
+  }
+}
+
+/* Cream stationery ruled paper effect for the heartfelt letter */
+.letter-stationery {
+  background-color: #fffcf6;
+  background-image:
+    radial-gradient(rgba(204, 162, 82, 0.08) 1px, transparent 0),
+    repeating-linear-gradient(
+      transparent,
+      transparent 35px,
+      rgba(221, 198, 174, 0.28) 35px,
+      rgba(221, 198, 174, 0.28) 36px
+    );
+  background-size: 24px 24px, 100% 36px;
+}
+
+/* Soft golden keepsake shadow without heavy neon */
+.keepsake-frame-shadow {
+  box-shadow:
+    0 0 0 1px rgba(231, 201, 137, 0.65),
+    0 24px 54px -18px rgba(132, 86, 108, 0.26),
+    0 8px 24px -8px rgba(220, 109, 150, 0.16);
+}
+
+/* Quiet thin scrollbar inside scrollable chapter sheets */
+.keepsake-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(220, 109, 150, 0.35) transparent;
+}
+
+.keepsake-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.keepsake-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.keepsake-scroll::-webkit-scrollbar-thumb {
+  background-color: rgba(220, 109, 150, 0.32);
+  border-radius: 999px;
+}
